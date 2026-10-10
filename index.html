@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="The One-Person Company: six sessions on the operating model of a business of one. Your hours as the ceiling, the offer ladder from hourly to productized and retainer, leverage that needs no permission, a capacity bench modelled in your browser, client concentration and runway, and a weekly operating rhythm. Illustrative, not financial or tax advice. Free, by Phoebe Fu.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Learn Solopreneur with Phoebe">
+<meta property="og:description" content="What you sell, how it scales past your own hours, and what breaks first. Six sessions, one constructed solo consultant, and 52 modelled weeks run in your browser.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-solopreneur-with-phoebe/">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-solopreneur-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Learn Solopreneur with Phoebe">
+<meta name="twitter:description" content="The one-person company: offers, capacity, leverage and the client you cannot afford to lose.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-solopreneur-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Learn Solopreneur with Phoebe</title>
+<link rel="stylesheet" href="assets/style.css?v=1">
+<style>
+
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: 1; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(var(--shadow-rgb),.16); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--muted); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,var(--indigo-50)); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+
+  .not-this { border: 1px solid var(--hairline); border-left: 4px solid var(--clay); border-radius: var(--radius); background: #fff; padding: 1.1rem 1.3rem; margin-top: 1.2rem; }
+  .not-this h3 { font-size: .95rem; font-weight: 800; margin-bottom: .5rem; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn with Phoebe · Business</div>
+    <h1>Learn <span class="accent">Solopreneur</span> with Phoebe</h1>
+    <p class="sub">The One-Person Company: the operating model of a business of one. What you sell, how it scales past your own hours, and what breaks first. Six sessions on the hours that never reach an invoice, the offer ladder from hourly to fixed-scope, productized, retainer and asset, leverage that needs nobody's permission, the client who is half the business, and a weekly rhythm to run it all. One constructed solo consultant, Marlow, and one bench: 52 modelled weeks of Marlow's year, computed in your browser. Illustrative, not financial or tax advice.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="6">6</b><span>sessions</span></div>
+      <div class="stat"><b data-count="52">52</b><span>modelled weeks on the bench</span></div>
+      <div class="stat"><b data-count="5">5</b><span>rungs on the offer ladder</span></div>
+      <div class="stat"><b data-count="26">26</b><span>weeks of runway when the anchor walks</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The six sessions 🧭 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· from selling hours to running a business</span></h2>
+      <p class="plede">The running case is <strong>Marlow, a constructed solo data consultant</strong>, two years out of an analytics team, selling dashboards and clean-ups at $110 an hour. One anchor client sends most of the work; small clients send the rest; Marlow can work about 45 hours a week. Marlow and every Marlow number are invented for teaching and modelled, and every page says so. Illustrative, not financial or tax advice.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/01-hours-are-the-ceiling.html" style="--diff:#34D399">
+        <span class="cicon">⏳</span>
+        <span class="cnum">Session 1 · foundations</span>
+        <h3>Your hours are the ceiling</h3>
+        <p>How many businesses of one exist and why the income surveys disagree, the four kinds of hours and the one that gets paid, the effective rate and the ceiling.</p>
+        <span class="meta"><span class="pill amber">▶ Start here</span></span>
+      </a>
+      <a class="course-card" href="courses/02-the-offer-ladder.html" style="--diff:#FBBF24">
+        <span class="cicon">🪜</span>
+        <span class="cnum">Session 2 · core</span>
+        <h3>The offer ladder</h3>
+        <p>Hourly, fixed-scope, productized, retainer, asset: what each one actually sells, where the scope line goes, and how to move one offer one rung up.</p>
+        <span class="meta"><span class="pill">from hourly to productized</span></span>
+      </a>
+      <a class="course-card" href="courses/03-leverage-without-permission.html" style="--diff:#FBBF24">
+        <span class="cicon">⚙️</span>
+        <span class="cnum">Session 3 · core</span>
+        <h3>Leverage that does not need permission</h3>
+        <p>Labour, capital, code and media, with each idea traced to where it came from; hours put in once against hours repeated; and the case for staying small, argued both ways.</p>
+        <span class="meta"><span class="pill">hours in, hours repeated</span></span>
+      </a>
+      <a class="course-card" href="courses/04-the-capacity-bench.html" style="--diff:#F87171">
+        <span class="cicon">📊</span>
+        <span class="cnum">Session 4 · bench night</span>
+        <h3>The capacity bench</h3>
+        <p>Marlow's year modelled in your browser: five rungs, effective rate and concentration side by side, "say yes to every hourly client", and losing the biggest client in week 27.</p>
+        <span class="meta"><span class="pill amber">★ the bench</span></span>
+      </a>
+      <a class="course-card" href="courses/05-one-client-half-the-business.html" style="--diff:#FB923C">
+        <span class="cicon">⚖️</span>
+        <span class="cnum">Session 5 · deeper</span>
+        <h3>When one client is half the business</h3>
+        <p>How concentration builds without anyone choosing it, why investors are told about it, runway counted in weeks, and a cap you set before you need it.</p>
+        <span class="meta"><span class="pill">concentration and runway</span></span>
+      </a>
+      <a class="course-card" href="courses/06-the-weekly-operating-rhythm.html" style="--diff:#FB923C">
+        <span class="cicon">🗓️</span>
+        <span class="cnum">Session 6 · deeper</span>
+        <h3>The weekly operating rhythm</h3>
+        <p>A fifteen-minute weekly review of hours, pipeline, cash and concentration, one lever pulled per week, and where the line sits between staying solo and hiring.</p>
+        <span class="meta"><span class="pill amber">🔒 the rhythm</span></span>
+      </a>
+    </div>
+    <div class="diff-legend">
+      <span><i style="background:#34D399"></i>foundations</span>
+      <span><i style="background:#FBBF24"></i>core</span>
+      <span><i style="background:#FB923C"></i>deeper</span>
+      <span><i style="background:#F87171"></i>bench night</span>
+    </div>
+  </section>
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>Your passport 🎫</h2>
+      <p class="plede">Clear all three quiz questions in a session and it gets stamped. Six stamps means you can read your effective rate and ceiling, move an offer one rung up, audit your leverage, read a year as two numbers, rehearse losing your biggest client, and run a weekly review. Stamps live in this browser only.</p>
+    </div>
+    <div class="pp-strip"></div>
+  </section>
+  <section class="section">
+    <div class="not-this">
+      <h3>What this is not, so you land in the right place 🧭</h3>
+      <table class="clean">
+        <tr><th>If your question is</th><th>Go here instead</th></tr>
+        <tr><td>How do I build a reputation, pick a niche and show proof on the right platforms?</td><td><a href="https://phoebefu6.github.io/learn-personal-branding-with-phoebe/">Personal Branding ↗</a></td></tr>
+        <tr><td>Who exactly is my customer, how do I position against the alternative, and which channel finds them?</td><td><a href="https://phoebefu6.github.io/learn-marketing-with-phoebe/">Marketing ↗</a></td></tr>
+        <tr><td>How do I read my accounts, tell cash from profit, or size funding?</td><td><a href="https://phoebefu6.github.io/learn-finance-with-phoebe/">Finance ↗</a></td></tr>
+        <tr><td>How do I build the automations that cut my admin?</td><td><a href="https://phoebefu6.github.io/learn-automation-with-phoebe/">Automation ↗</a></td></tr>
+        <tr><td>How do I triage my own week and inbox?</td><td><a href="https://phoebefu6.github.io/learn-ai-productivity-with-phoebe/">AI Productivity ↗</a></td></tr>
+        <tr><td>How do I set a price from data on how demand responds?</td><td><a href="https://phoebefu6.github.io/learn-economics-with-phoebe/">Economics ↗</a></td></tr>
+        <tr><td><strong>I work alone, my hours are full or my income is uneven, and I need to decide what to sell, what to stop doing and which risk to fix first.</strong></td><td><strong>you are in the right place</strong></td></tr>
+      </table>
+      <p style="margin-top:.7rem;font-size:.86rem;color:var(--muted)"><strong>The operating model of a business of one.</strong> Brand, marketing, accounts, automation builds, personal ops and pricing analysis are taught next door and linked from here rather than repeated. Automation and AI appear here only as hours moved on the ledger.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="paths">
+      <h2>Choose your path 🗺️</h2>
+      <p class="plede">Three doors into the same idea: sell something your hours do not cap, and know what happens when the biggest client walks.</p>
+      <div class="path"><b>⏳ I am full and still underpaid</b>
+        <a class="pstep" href="courses/01-hours-are-the-ceiling.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-the-offer-ladder.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/04-the-capacity-bench.html">4</a>
+        <span style="font-size:.82rem;color:var(--muted)">count the hours, climb a rung, run the year</span>
+      </div>
+      <div class="path"><b>⚖️ One client pays most of my bills</b>
+        <a class="pstep" href="courses/05-one-client-half-the-business.html">5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/04-the-capacity-bench.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/06-the-weekly-operating-rhythm.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">measure the share, rehearse the loss, review weekly</span>
+      </div>
+      <div class="path"><b>🧭 The whole operating model</b>
+        <a class="pstep" href="courses/01-hours-are-the-ceiling.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-the-offer-ladder.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-leverage-without-permission.html">3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/04-the-capacity-bench.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/05-one-client-half-the-business.html">5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/06-the-weekly-operating-rhythm.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">from the hour ledger to the weekly review</span>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>What is honest here 🧾</h2>
+      <p class="plede">Advice for businesses of one travels with confident income numbers and quotable frameworks. Each claim on these pages carries its status.</p>
+    </div>
+    <table class="clean">
+      <tr><th>Claim</th><th>Status</th></tr>
+      <tr><td>Counts of solo businesses: 29.8 million US nonemployer businesses with $1.7 trillion of receipts (2022); 4.1 million of 5.5 million UK businesses with no employees (2024)</td><td><strong>Read at source</strong> in the US Census Bureau and UK Department for Business and Trade releases</td></tr>
+      <tr><td>"Solopreneurs earn X"</td><td><strong>Contested.</strong> Tax records, a business register and a vendor survey count different populations and different money. Session 1 teaches the disagreement</td></tr>
+      <tr><td>Naval Ravikant's four forms of leverage</td><td><strong>Opinion, read at source</strong> as a tweet thread and podcast transcript; not research</td></tr>
+      <tr><td>Jarvis on staying small, Maister on people leverage</td><td><strong>Reported</strong> from reviews and summaries; the books were not read for these pages</td></tr>
+      <tr><td>Every bench number: revenue, hours, effective rate, weeks over capacity, top client's share, hole and runway</td><td><strong>Modelled</strong> by a seeded simulation in your browser and reproduced by an independent Python run; labelled on the widget</td></tr>
+      <tr><td>Marlow, the clients, prices, costs and cash</td><td><strong>Constructed,</strong> for teaching. Illustrative, not financial or tax advice</td></tr>
+    </table>
+  </section>
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">The whole path at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+  <footer class="pagefoot">
+    <span>learn-solopreneur-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span>Neighbours on the shelf: <a href="https://phoebefu6.github.io/learn-personal-branding-with-phoebe/">Personal Branding ↗</a> &nbsp;·&nbsp; <a href="https://phoebefu6.github.io/learn-marketing-with-phoebe/">Marketing ↗</a> &nbsp;·&nbsp; <a href="https://phoebefu6.github.io/learn-finance-with-phoebe/">Finance ↗</a></span>
+  </footer>
+</main>
+<script>
+window.MINDMAP_DATA = {
+ "title": "One-Person\nCompany",
+ "centerColor": "#5E2419",
+ "sessions": [
+  {
+   "label": "Your hours are\nthe ceiling",
+   "href": "courses/01-hours-are-the-ceiling.html",
+   "color": "#34D399",
+   "concepts": [
+    {
+     "label": "Three counts, three nets",
+     "href": "courses/01-hours-are-the-ceiling.html"
+    },
+    {
+     "label": "Four kinds of hours",
+     "href": "courses/01-hours-are-the-ceiling.html"
+    },
+    {
+     "label": "Effective rate, ceiling",
+     "href": "courses/01-hours-are-the-ceiling.html"
+    }
+   ]
+  },
+  {
+   "label": "The offer\nladder",
+   "href": "courses/02-the-offer-ladder.html",
+   "color": "#FBBF24",
+   "concepts": [
+    {
+     "label": "Five offer types",
+     "href": "courses/02-the-offer-ladder.html"
+    },
+    {
+     "label": "What each one sells",
+     "href": "courses/02-the-offer-ladder.html"
+    },
+    {
+     "label": "The scope line",
+     "href": "courses/02-the-offer-ladder.html"
+    }
+   ]
+  },
+  {
+   "label": "Leverage without\npermission",
+   "href": "courses/03-leverage-without-permission.html",
+   "color": "#FBBF24",
+   "concepts": [
+    {
+     "label": "Labour, capital, code",
+     "href": "courses/03-leverage-without-permission.html"
+    },
+    {
+     "label": "Hours in, hours repeated",
+     "href": "courses/03-leverage-without-permission.html"
+    },
+    {
+     "label": "Stay small, contested",
+     "href": "courses/03-leverage-without-permission.html"
+    }
+   ]
+  },
+  {
+   "label": "The capacity\nbench",
+   "href": "courses/04-the-capacity-bench.html",
+   "color": "#F87171",
+   "concepts": [
+    {
+     "label": "The two-number rung",
+     "href": "courses/04-the-capacity-bench.html"
+    },
+    {
+     "label": "Say yes to all: anti",
+     "href": "courses/04-the-capacity-bench.html"
+    },
+    {
+     "label": "Lose the biggest client",
+     "href": "courses/04-the-capacity-bench.html"
+    }
+   ]
+  },
+  {
+   "label": "One client, half\nthe business",
+   "href": "courses/05-one-client-half-the-business.html",
+   "color": "#FB923C",
+   "concepts": [
+    {
+     "label": "Top-client share",
+     "href": "courses/05-one-client-half-the-business.html"
+    },
+    {
+     "label": "Runway in weeks",
+     "href": "courses/05-one-client-half-the-business.html"
+    },
+    {
+     "label": "A concentration cap",
+     "href": "courses/05-one-client-half-the-business.html"
+    }
+   ]
+  },
+  {
+   "label": "The weekly\noperating rhythm",
+   "href": "courses/06-the-weekly-operating-rhythm.html",
+   "color": "#FB923C",
+   "concepts": [
+    {
+     "label": "Fifteen-minute review",
+     "href": "courses/06-the-weekly-operating-rhythm.html"
+    },
+    {
+     "label": "The solo-vs-hire line",
+     "href": "courses/06-the-weekly-operating-rhythm.html"
+    },
+    {
+     "label": "One lever a week",
+     "href": "courses/06-the-weekly-operating-rhythm.html"
+    }
+   ]
+  }
+ ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>

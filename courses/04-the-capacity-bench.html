@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 4 of 6. Marlow's capacity ledger: a seeded 52-week model of a constructed solo consultant, run in your browser. Climb the offer ladder from all hourly to retainers and automation, watch the effective rate and client concentration move, then say yes to every hourly client and lose the biggest one in week 27.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="The capacity bench - learn solopreneur with phoebe">
+<meta property="og:description" content="Session 4 of 6. 52 modelled weeks, five rungs, one anti-lever and a break button. Every number printed by the widget, every number labelled modelled.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-solopreneur-with-phoebe/courses/04-the-capacity-bench.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-solopreneur-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The capacity bench - learn solopreneur with phoebe">
+<meta name="twitter:description" content="Session 4 of 6. A year of a one-person company, modelled in your browser.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-solopreneur-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 4 · The capacity bench - learn solopreneur with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-solopreneur-with-phoebe</a> / Session 4 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Solopreneur with Phoebe · Session 4 of 6</div>
+    <h1>The <span class="accent">capacity</span> bench</h1>
+    <p class="sub">Sessions 1 to 3 argued that a business of one hits a ceiling made of hours, that some offers sell something other than hours, and that leverage moves work off the clock. Tonight the argument runs. Marlow's year is a seeded 52-week model in this page: demand arrives every week, a stated booking rule decides what Marlow takes on inside 45 hours, and the page prints revenue, every hour by kind, the effective rate, the weeks over capacity and how much of the year one client paid for. You climb the ladder rung by rung, then try the move that feels like growth, then take away the biggest client in week 27 and see what is left.</p>
+    <div class="chip-row">
+      <span class="chip level">🔴 Bench night</span>
+      <span class="chip audience">Bring your session 1 ledger</span>
+      <span class="chip audience">No code tonight, all clicking</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:2">3-12 · How the model books a week</span>
+      <span class="a3" style="flex:6">12-38 · The bench, rung by rung</span>
+      <span class="a4" style="flex:2">38-45 · Limits, and Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">Nothing on this bench happened. Marlow is constructed, and the year is a model: the same seeded draw of demand every time, so the only thing that changes between rungs is what Marlow sells. That makes the bench good for comparing ways of running a business of one, and useless for predicting yours. Every number carries a "modelled" tag, and an independent Python run reproduces every default number on this page to the cent. Illustrative, not financial or tax advice.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">modelled = printed by the seeded model, not measured</span>
+      <span class="pill">anti-lever and break = the two red buttons</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> The modelled shape of the offer ladder, read as two numbers at once, effective rate and client concentration; why one rung earns less per hour and is still worth having; what saying yes to every hourly request does to a year; and how many weeks of runway each rung leaves when the biggest client walks.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers how the model books a week</span>
+      <h2>A 45-hour bucket, filled in a fixed order</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">Each modelled week starts empty. Fixed commitments go in first, then the work with the most value per hour, and hourly requests last, each only if what it needs fits in what is left. Admin is charged as a base plus a slice for every client billed that week, so taking on a new client costs hours before any work is done.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A bucket marked 45 hours filled from the bottom in a fixed order: admin base of 6 hours, product building, retainer delivery, project delivery, productized units, the anchor client's hours, then small hourly requests. A small request on the right is held over the bucket with a test: its hours plus half an hour of sales plus half an hour of admin for a new client must fit, or it is turned away. The anchor client is highlighted in sage as the only request allowed to fit partly.">
+        <defs>
+          <filter id="s4aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="43" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s4aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#8E3A2B" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s4aAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#2B1D1A" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s4aH { font: 800 12px Inter, sans-serif; fill: #2B1D1A; }
+          .s4aL { font: 600 12px Inter, sans-serif; fill: #2B1D1A; }
+          .s4aS { font: 400 11px Inter, sans-serif; fill: #6B5A55; }
+          .s4aB { font: 800 11px Inter, sans-serif; fill: #2F4F3A; }
+          .s4aA { font: 700 11px Inter, sans-serif; fill: #8E3A2B; }
+          .s4aN { font: 400 12px Inter, sans-serif; fill: #6B5A55; }
+        </style>
+
+        <text class="s4aH" x="30" y="26">HOW ONE MODELLED WEEK GETS BOOKED</text>
+
+        <g filter="url(#s4aSk)" fill="none" stroke="#2B1D1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M120 52 L120 290 L420 290 L420 52"/>
+          <path d="M108 60 L432 60" stroke="#8E3A2B" stroke-dasharray="6 4"/>
+          <rect x="128" y="256" width="284" height="28" rx="4" fill="url(#s4aHc)"/>
+          <rect x="128" y="224" width="284" height="28" rx="4" fill="#FBF1ED"/>
+          <rect x="128" y="192" width="284" height="28" rx="4" fill="#FBF1ED"/>
+          <rect x="128" y="160" width="284" height="28" rx="4" fill="#FBF1ED"/>
+          <rect x="128" y="128" width="284" height="28" rx="4" fill="#FBF1ED"/>
+          <rect x="128" y="96" width="284" height="28" rx="4" fill="#E8F1EA" stroke="#4E7A5C"/>
+          <rect x="128" y="66" width="284" height="26" rx="4" fill="#FFFFFF" stroke-dasharray="4 3"/>
+          <rect x="560" y="70" width="270" height="110" rx="10" transform="rotate(0.6 695 125)" fill="#FFFFFF"/>
+          <path d="M552 104 C510 96 470 90 438 84" marker-end="url(#s4aAr)"/>
+          <rect x="560" y="206" width="270" height="70" rx="10" transform="rotate(-0.6 695 241)" fill="#FEF2F2" stroke="#FCA5A5"/>
+          <path d="M695 186 L695 200" marker-end="url(#s4aAr)"/>
+        </g>
+
+        <text class="s4aA" x="444" y="64">45 h capacity</text>
+        <text class="s4aL" x="140" y="275">1 · admin base, 6 h</text>
+        <text class="s4aS" x="140" y="243">2 · building the productized offer</text>
+        <text class="s4aS" x="140" y="211">3 · retainer delivery, 5 h each</text>
+        <text class="s4aS" x="140" y="179">4 · project delivery, 9 h each</text>
+        <text class="s4aS" x="140" y="147">5 · productized units, 7 h each</text>
+        <text class="s4aB" x="140" y="115">6 · anchor client, may fit partly</text>
+        <text class="s4aS" x="140" y="84">7 · small hourly requests</text>
+
+        <text class="s4aL" x="576" y="94">A small request: 6 h</text>
+        <text class="s4aS" x="576" y="114">needs 6 h work + 0.5 h sales</text>
+        <text class="s4aS" x="576" y="132">+ 0.5 h admin if a new client</text>
+        <text class="s4aL" x="576" y="158">fits in what is left? take it</text>
+        <text class="s4aL" x="576" y="232">does not fit? turned away</text>
+        <text class="s4aS" x="576" y="252">the anti-lever takes it anyway</text>
+
+        <text class="s4aN" x="30" y="316">The order is the rule, printed on the widget. Real weeks are messier; the order is what you can compare.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - higher-value work books first, hourly fills the gaps, and every new client brings its own slice of admin</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Five outputs, and why the third is the one to watch<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Annual revenue</strong> is every invoice in the year. <strong>Total hours</strong> counts all four kinds from session 1: billable, sales, admin and building. <strong>Effective hourly rate</strong> divides the first by the second, so it charges each offer for the selling, admin and building it drags in. <strong>Weeks over capacity</strong> counts weeks above 45 hours, which the booking rule avoids unless you switch it off. <strong>Top client's share</strong> is the fraction of the year's revenue that one client paid; session 5 is about that number.</p>
+        <p>Revenue is the number a business of one is tempted to optimise. The effective rate is the one that tells you whether a new offer is better or just bigger, and the top client's share tells you how fragile the year is. The bench prints all three side by side so no rung can win on one while hiding the others.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The defaults, and what they assume<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Hourly work is $110 an hour. The anchor client asks for 14 to 22 hours a week; zero to three small requests of four to eight hours arrive each week from six small clients. A fixed-scope project is $5,400 for four weeks of nine hours, takes five hours to win, and Marlow runs at most two at once. The productized offer is $1,800 for seven hours of delivery and one of sales, after eight weeks of building it at eight hours a week; it sells up to two a week from week 9. Retainers are $700 a week for five hours, take eight hours to win, and are won in weeks 5, 14 and 30. Admin is six hours a week plus half an hour per client billed. Automation cuts admin by 40 percent for a 20-hour set-up in week 1. Weekly costs are $2,000 and Marlow starts with $8,000 of cash.</p>
+        <p>The biggest assumption is that demand does not respond to anything Marlow does: the same requests arrive whatever the price and whatever else Marlow sells. That makes rungs comparable and is plainly false about any real market. Price response belongs to <a href="https://phoebefu6.github.io/learn-economics-with-phoebe/">Economics ↗</a>.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="bench">
+    <div class="section-kicker">
+      <span class="klabel">Build-along · the bench</span>
+      <h2>Marlow's year, rung by rung</h2>
+      <span class="tag demo">★ 26 min · the main event</span>
+    </div>
+    <p class="lede">Start on rung 1 and read the verdict line, then the six numbers, then the 52 bars against the dashed capacity line. Move one rung at a time and say out loud which of the three headline numbers moved and which way. Only then try the two red buttons. The sliders change capacity and the hourly price; the numbers quoted on this page are all at the defaults, 45 hours and $110.</p>
+
+    <div id="capacity-bench"></div>
+
+    <div class="callout tip">
+      <p><strong>Read it in this order.</strong> Verdict, effective rate, top client's share, then revenue. On rung 1 Marlow earns $144,430 for 1,717 hours, an effective $84.12 an hour, and the anchor client pays 69.5 percent of the year. Keep those three numbers in your head as you climb.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers what the ladder does</span>
+      <h2>Two numbers up the ladder</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">These are the numbers the widget prints at the defaults, written down so they can be argued with after class. The Python reference reproduces every one of them.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two bar charts across the five rungs, modelled. Left, effective hourly rate: all hourly 84.12 dollars, plus fixed-scope 96.32, plus productized 110.93, plus retainers 108.80, plus automation 116.43. Right, the top client's share of revenue: 69.5 percent, 46.9, 30.8, 18.2 and 18.9. The retainer rung is highlighted in sage: its rate dips while its concentration falls the most.">
+        <defs>
+          <filter id="s4bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="47" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s4bHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#8E3A2B" stroke-width="1" opacity=".5"/></pattern>
+        </defs>
+        <style>
+          .s4bH { font: 800 12px Inter, sans-serif; fill: #2B1D1A; }
+          .s4bL { font: 600 12px Inter, sans-serif; fill: #2B1D1A; }
+          .s4bS { font: 400 11px Inter, sans-serif; fill: #6B5A55; }
+          .s4bB { font: 800 11px Inter, sans-serif; fill: #2F4F3A; }
+          .s4bV { font: 800 12px Inter, sans-serif; fill: #5E2419; }
+          .s4bN { font: 400 12px Inter, sans-serif; fill: #6B5A55; }
+        </style>
+
+        <text class="s4bH" x="30" y="26">THE LADDER, READ AS TWO NUMBERS (MODELLED)</text>
+        <text class="s4bL" x="170" y="52">Effective hourly rate</text>
+        <text class="s4bL" x="560" y="52">Top client's share of revenue</text>
+
+        <g filter="url(#s4bSk)" fill="none" stroke="#2B1D1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="170" y="66" width="173" height="26" rx="4" fill="#EBCFC6"/>
+          <rect x="170" y="108" width="198" height="26" rx="4" fill="#EBCFC6"/>
+          <rect x="170" y="150" width="228" height="26" rx="4" fill="#EBCFC6"/>
+          <rect x="170" y="192" width="224" height="26" rx="4" fill="#E8F1EA" stroke="#4E7A5C"/>
+          <rect x="170" y="234" width="240" height="26" rx="4" fill="#8E3A2B"/>
+          <rect x="560" y="66" width="243" height="26" rx="4" fill="#8E3A2B"/>
+          <rect x="560" y="108" width="164" height="26" rx="4" fill="url(#s4bHc)"/>
+          <rect x="560" y="150" width="108" height="26" rx="4" fill="url(#s4bHc)"/>
+          <rect x="560" y="192" width="64" height="26" rx="4" fill="#E8F1EA" stroke="#4E7A5C"/>
+          <rect x="560" y="234" width="66" height="26" rx="4" fill="url(#s4bHc)"/>
+        </g>
+
+        <text class="s4bL" x="156" y="84" text-anchor="end">1 · all hourly</text>
+        <text class="s4bL" x="156" y="126" text-anchor="end">2 · + fixed-scope</text>
+        <text class="s4bL" x="156" y="168" text-anchor="end">3 · + productized</text>
+        <text class="s4bB" x="156" y="210" text-anchor="end">4 · + retainers</text>
+        <text class="s4bL" x="156" y="252" text-anchor="end">5 · + automation</text>
+        <text class="s4bV" x="351" y="84">$84.12</text>
+        <text class="s4bV" x="376" y="126">$96.32</text>
+        <text class="s4bV" x="406" y="168">$110.93</text>
+        <text class="s4bV" x="402" y="210">$108.80</text>
+        <text class="s4bV" x="418" y="252">$116.43</text>
+        <text class="s4bV" x="811" y="84">69.5%</text>
+        <text class="s4bV" x="732" y="126">46.9%</text>
+        <text class="s4bV" x="676" y="168">30.8%</text>
+        <text class="s4bV" x="632" y="210">18.2%</text>
+        <text class="s4bV" x="634" y="252">18.9%</text>
+
+        <text class="s4bN" x="30" y="292">Revenue: $144,430, $206,940, $250,530, $251,920, $265,320. No rung goes over 45 h in any week.</text>
+        <text class="s4bN" x="30" y="312">Rung 4 trades $2.13 an hour for the biggest fall in concentration. Illustrative, not financial or tax advice.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the rate climbs almost every rung and concentration falls every rung but the last; the sage rung is the one where the two disagree</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Rungs 2 and 3: selling outcomes, then packages<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Adding fixed-scope projects takes revenue from $144,430 to $206,940 and the effective rate from $84.12 to $96.32. Projects fill the idle hours that hourly demand left empty, at $150 for each delivery hour, and they spread revenue across more clients: the anchor client's share falls from 69.5 to 46.9 percent. Adding the productized offer costs 64 hours of building in weeks 1 to 8 and earns nothing in those weeks, yet by year end revenue is $250,530 and the rate $110.93, the first rung above the $110 list price. A package sold off the shelf earns more per hour than the hour it replaces because its sales and scoping were done once, not per client.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Rung 4: the rung that earns less per hour<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Retainers add $1,390 of revenue over rung 3 and lower the effective rate from $110.93 to $108.80, because they book before projects and productized units and displace some of that higher-value work. On rate alone, rung 4 is a step back. On concentration it is the biggest step forward: the top client's share falls from 30.8 to 18.2 percent, and the revenue lost when that client walks halves. A retainer sells access, and access is predictable. Whether that is worth $2.13 an hour depends on how much you value a calmer year, which no model can say for you.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Rung 5: what automation buys on this ledger<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Cutting admin by 40 percent for 20 hours of set-up takes admin from 434.5 to 263.7 hours and the rate to $116.43. Notice where the freed hours went: billable hours rose from 1,689 to 1,794, because the booking rule refilled them with work that had been turned away. Automation did not shorten Marlow's year much; it converted unpaid hours into paid ones. How to build the automations is taught in <a href="https://phoebefu6.github.io/learn-automation-with-phoebe/">Automation ↗</a>; here they are only hours moved on the ledger.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The consultant who would not take a retainer.</strong> A common objection: "a retainer pays me less per hour than my projects do." On the bench that is exactly right, and it is also why the objection misses the point. The retainer is not competing with the project on rate. It is competing with the empty week after the project ends, and with the week a big client leaves. Switch on the break button at rung 3, then at rung 4, and compare the holes.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers the anti-lever and the break button</span>
+      <h2>The move that feels like growth, and the week it all goes</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">Two red buttons. The first is the most natural reaction to a quiet month: take everything. The second is the event every business of one should rehearse: the biggest client stops. Both are modelled by a stated rule, and the widget prints the rule next to the button.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels, modelled. Left, the anti-lever on rung 1, saying yes to every hourly client: revenue 144,430 to 171,420 dollars, effective rate 84.12 to 82.04 dollars, weeks over capacity 0 to 15. Right, the break button, losing the anchor client in week 27: rung 1 loses 48,290 dollars of revenue and has 26 weeks of runway; rung 3 loses 24,640 dollars and still covers costs; rung 5 loses 9,130 dollars and still covers costs.">
+        <defs>
+          <filter id="s4cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="53" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <marker id="s4cAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#2B1D1A" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s4cH { font: 800 12px Inter, sans-serif; fill: #2B1D1A; }
+          .s4cL { font: 600 12px Inter, sans-serif; fill: #2B1D1A; }
+          .s4cS { font: 400 11px Inter, sans-serif; fill: #6B5A55; }
+          .s4cR { font: 800 12px Inter, sans-serif; fill: #991B1B; }
+          .s4cB { font: 800 11px Inter, sans-serif; fill: #2F4F3A; }
+          .s4cV { font: 800 13px Inter, sans-serif; fill: #5E2419; }
+          .s4cN { font: 400 12px Inter, sans-serif; fill: #6B5A55; }
+        </style>
+
+        <text class="s4cH" x="30" y="26">SAY YES TO EVERYTHING, THEN LOSE THE BIGGEST CLIENT (MODELLED)</text>
+
+        <g filter="url(#s4cSk)" fill="none" stroke="#2B1D1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="46" width="390" height="230" rx="12" transform="rotate(-0.4 235 161)" fill="#FEF2F2" stroke="#FCA5A5"/>
+          <rect x="450" y="46" width="390" height="230" rx="12" transform="rotate(0.4 645 161)" fill="#FBF1ED"/>
+          <path d="M210 104 L262 104" marker-end="url(#s4cAr)"/>
+          <path d="M210 154 L262 154" marker-end="url(#s4cAr)"/>
+          <path d="M210 204 L262 204" marker-end="url(#s4cAr)"/>
+          <rect x="466" y="186" width="358" height="34" rx="6" fill="#E8F1EA" stroke="#4E7A5C"/>
+        </g>
+
+        <text class="s4cR" x="58" y="72">Anti-lever · rung 1, take every request</text>
+        <text class="s4cS" x="58" y="94">revenue</text>
+        <text class="s4cV" x="58" y="112">$144,430</text>
+        <text class="s4cV" x="274" y="112">$171,420</text>
+        <text class="s4cS" x="58" y="144">effective rate</text>
+        <text class="s4cV" x="58" y="162">$84.12</text>
+        <text class="s4cR" x="274" y="162">$82.04</text>
+        <text class="s4cS" x="58" y="194">weeks over 45 h</text>
+        <text class="s4cV" x="58" y="212">0</text>
+        <text class="s4cR" x="274" y="212">15 of 52</text>
+        <text class="s4cS" x="58" y="250">busiest week 64.5 h; anchor share 58.5%</text>
+
+        <text class="s4cH" x="468" y="72">Break · the anchor client stops, week 27</text>
+        <text class="s4cS" x="468" y="94">rung</text>
+        <text class="s4cS" x="604" y="94">revenue hole</text>
+        <text class="s4cS" x="712" y="94">runway</text>
+        <text class="s4cL" x="468" y="126">1 · all hourly</text>
+        <text class="s4cV" x="604" y="126">$48,290</text>
+        <text class="s4cR" x="712" y="126">26 weeks</text>
+        <text class="s4cL" x="468" y="164">3 · + productized</text>
+        <text class="s4cV" x="604" y="164">$24,640</text>
+        <text class="s4cS" x="712" y="164">costs still covered</text>
+        <text class="s4cL" x="468" y="208">5 · + automation</text>
+        <text class="s4cV" x="604" y="208">$9,130</text>
+        <text class="s4cB" x="712" y="208">costs still covered</text>
+        <text class="s4cS" x="468" y="250">runway = cash at week 26 ÷ weekly shortfall</text>
+
+        <text class="s4cN" x="30" y="304">Costs $2,000 a week and $8,000 starting cash, both constructed. Rung 1 after the loss: $935 a week.</text>
+        <text class="s4cN" x="30" y="324">Illustrative, not financial or tax advice. Every number is printed by the widget at its defaults.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - taking everything buys revenue and costs the week; a ladder does not stop the loss, it shrinks the hole</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The anti-lever: say yes to every hourly client<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>The rule:</strong> every hourly request is taken whatever the week already holds, and so are discount requests at $85 an hour that the normal rule turns away. On rung 1, revenue rises from $144,430 to $171,420, but hours rise faster, from 1,717 to 2,089.5, so the effective rate falls from $84.12 to $82.04. Fifteen weeks go over 45 hours and the busiest reaches 64.5. Every new small client brings its own sales and admin slice, which is why the extra revenue earns less than the existing work.</p>
+        <p><strong>The honest nuance:</strong> on rung 1 the revenue gain is real, about $27,000, and in a cash emergency it can be the right call for a quarter. On rung 5 the same button lifts revenue from $265,320 to $385,370, which looks spectacular until you read the hours: 3,536.4 in the year, 68 a week on average, 50 weeks over capacity, and a rate down from $116.43 to $108.97. The model has no burnout, no quality loss and no clients who notice. Real ones do.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The break button: lose the biggest client<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A bench that can only produce good news is measuring nothing. The break button finds the client with the most revenue in the same run, which is the anchor client on every rung, and stops all its work from week 27. On rung 1 the year loses $48,290, revenue after the loss falls to $935 a week against $2,000 of weekly costs, and the cash built up by week 26 lasts about 26 weeks. From rung 2 up, what is left still covers costs, and the hole shrinks every rung: $36,850, $24,640, $11,550, $9,130.</p>
+        <p>One detail is worth seeing: in the model, part of the hole refills on its own, because the hours the anchor client freed are taken by small requests that had been turned away. That is realistic, and it is also why runway, not revenue, is the number to rehearse. Session 5 turns this into a monthly check.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What the model cannot tell you<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Demand never responds to price or reputation. Clients never leave unless you press the button. There are no taxes, no late payers, no holidays and no illness, and Marlow works the same 52 weeks every year. Each of those would change the numbers, and some would change the order of the rungs. What survives them is the direction: selling something other than hours lifts the effective rate and spreads the risk, and taking every hour on offer does not. Treat any single number here as a picture of a mechanism, never as a forecast.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 5</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Find your rung.</strong> Which rung is closest to how you sell today? Write its effective rate and top client's share next to the numbers from your session 1 ledger.</li>
+      <li><strong>Move the hourly price slider</strong> on rung 1 until the effective rate reaches $110. Note the price, then say why the model is too generous about it.</li>
+      <li><strong>Press the break button on every rung</strong> and write the five holes in a column. Which rung would you be willing to live on?</li>
+      <li><strong>Write one sentence</strong> on the anti-lever: when, if ever, you would take every request, and for how many weeks.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 4 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Adding retainers (rung 4) lifts revenue by $1,390 but lowers the effective rate from $110.93 to $108.80. What is the best reading?</p>
+      <button class="qopt" type="button">A · Retainers are a mistake and rung 3 is strictly better</button>
+      <button class="qopt" type="button">B · Retainers trade a little rate for the biggest fall in concentration on the ladder, 30.8 to 18.2 percent, and a much smaller hole when the biggest client walks</button>
+      <button class="qopt" type="button">C · The model has a bug, because every rung should raise the rate</button>
+      <button class="qopt" type="button">D · Retainers always earn more per hour than projects</button>
+      <p class="qwhy">The bench prints two numbers so a rung cannot win on one and hide the other. Rung 4 is the rung where they disagree, and the honest answer names the trade. A and D each read one number; C assumes a ladder must be monotone, which real choices are not.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="3">
+      <p class="qtext">2 · On rung 1, saying yes to every hourly client raises revenue from $144,430 to $171,420. Why is it the anti-lever?</p>
+      <button class="qopt" type="button">A · Because revenue goes down</button>
+      <button class="qopt" type="button">B · Because the model measured it on real consultants</button>
+      <button class="qopt" type="button">C · Because the extra clients pay late</button>
+      <button class="qopt" type="button">D · Because hours rise faster than revenue: the effective rate falls from $84.12 to $82.04, and 15 weeks go over 45 hours</button>
+      <p class="qwhy">Revenue rises; that is what makes the move tempting. The rate and the week both get worse, which the bench prints. Nothing here is measured on real people (B), and late payment is not in the model (C).</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · The break button on rung 1 prints a revenue hole of $48,290 and about 26 weeks of runway. What does "runway" mean here?</p>
+      <button class="qopt" type="button">A · The cash on hand at week 26, divided by how much revenue after the loss falls short of the $2,000 weekly costs</button>
+      <button class="qopt" type="button">B · How long until the client comes back</button>
+      <button class="qopt" type="button">C · The number of weeks left in the year</button>
+      <button class="qopt" type="button">D · A measured average for real solo businesses</button>
+      <p class="qwhy">Cash at week 26 is $27,830; revenue after the loss is $935 a week against $2,000 of costs. The cash covers the shortfall for about 26 weeks. The costs and the cash are constructed, so the number illustrates a mechanism, not a benchmark.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Every number on the bench and on this page</span><span class="note">Printed by the seeded model in your browser at its defaults, and reproduced by an independent Python reference: 93 values identical, revenue to the dollar, rates to the cent</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">The booking rule, the anti-lever and the break button</span><span class="note">Modelled by rules printed on the widget; only their direction and rough size are claimed, never a forecast</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Marlow, the clients, costs and cash</span><span class="note">Constructed for teaching; your numbers will differ</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 4 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Read three numbers</b><span>Effective rate, top client's share, then revenue. Never revenue alone.</span></div>
+      <div class="cheat-item"><b>The ladder, modelled</b><span>Rate $84.12, $96.32, $110.93, $108.80, $116.43 across the five rungs.</span></div>
+      <div class="cheat-item"><b>Concentration falls</b><span>Top client 69.5% on rung 1, 18.2% with retainers.</span></div>
+      <div class="cheat-item"><b>The two-number rung</b><span>Retainers cost $2.13 an hour of rate and halve the hole.</span></div>
+      <div class="cheat-item"><b>Say yes to everything</b><span>Rung 1: revenue up $26,990, rate down, 15 weeks over 45 h.</span></div>
+      <div class="cheat-item"><b>Rehearse the loss</b><span>Rung 1 hole $48,290, 26 weeks of runway; from rung 2, costs covered.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>On rung 1 one client paid 69.5 percent of Marlow's year. Session 5 is about that number: how concentration builds without anyone choosing it, the disclosure rule that shows investors treat it as a risk, and a monthly check that tells you how many weeks you would last.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 4 of 6 · learn-solopreneur-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="03-leverage-without-permission.html">← Prev: Leverage that does not need permission</a> &nbsp;·&nbsp; <a href="05-one-client-half-the-business.html">Next: When one client is half the business →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/solo-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
